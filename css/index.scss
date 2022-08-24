@@ -1,0 +1,69 @@
+.searchbar {
+  background-color: #C7BEBE;
+}
+
+.recipes_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  & .recipe_card {
+    margin: 2rem 0;
+    background-color: #E7E7E7;
+
+    &__image {
+      height: 10rem;
+      background-color: #C7BEBE;
+    }
+
+    &__main_infos {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+
+      &__time {
+        font-weight: bold;
+
+        & .fa-clock {
+          font-size: 20px;
+        }
+
+        &__number {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+
+    &__sub_infos {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+
+      &__ingredients {
+        white-space: nowrap;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+
+        &__ingredient {
+          margin-bottom: 0.3rem;
+
+          &__name {
+            font-weight: bold;
+          }
+        }
+      }
+
+      &__description {
+        overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          /* number of lines to show */
+          line-clamp: 6;
+          -webkit-box-orient: vertical;
+          height: 7rem;
+      }
+    }
+  }
+}
