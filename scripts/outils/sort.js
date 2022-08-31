@@ -12,12 +12,11 @@ searchbarInput.addEventListener("keyup", function() {
   //Check si la recherche a bien + de 2 caractères
   if (filter.length > 2) {
 
-    //Si oui
-    //Vide la page de toutes ses cartes
-    cardSection.innerHTML = "";
-    // Arret vide qui contiendra les nouvelles cartes
-    const newCards = []
+    for (x = 0; x < allCards.length; x++) {
+      allCards[x].style.display = "none"
+    }
 
+    //Si oui
     //Regarde chacune des cartes une par une
     for (i=0; i < allCards.length; i++) {
       //Recupere le titre de la carte
@@ -42,16 +41,12 @@ searchbarInput.addEventListener("keyup", function() {
       const allCardContent = cardTitleValue + cardIngredientsList + cardDescriptionValue;
 
       if (allCardContent.toLowerCase().indexOf(filter) > -1 ) {
-        newCards.push(allCards[i]);
+        allCards[i].style.display = "block"
       }
-    }
-    // Rentre les nouvelles cartes dans la section des cartes
-    for (x=0; x < newCards.length; x++) {
-      cardSection.append(newCards[x]);
     }
   } else {
     for (x = 0; x < allCards.length; x++) {
-      cardSection.append(allCards[x]);
+      allCards[x].style.display = "block"
     }
   }
 })
