@@ -4,6 +4,9 @@ function recipeFactory(data) {
   function getRecipeCardDOM() {
     const recipeCard = document.createElement('article');
     recipeCard.setAttribute('class', 'recipe_card');
+    recipeCard.setAttribute('data-appareil', appliance);
+    const ustensilsList = ustensils.join(",");
+    recipeCard.setAttribute('data-ustensils', ustensilsList);
 
     const recipeCardImage = document.createElement('div');
     recipeCardImage.setAttribute('class', 'recipe_card__image');
