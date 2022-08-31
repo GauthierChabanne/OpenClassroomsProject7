@@ -16,8 +16,6 @@ function displayData(recipes) {
 
 function init() {
   displayData(recipes);
-  const allCards = document.querySelectorAll(".recipe_card");
-  nativeSearch(allCards, searchbarInput, cardSection)
 }
 
 init();

@@ -49,5 +49,9 @@ searchbarInput.addEventListener("keyup", function() {
     for (x=0; x < newCards.length; x++) {
       cardSection.append(newCards[x]);
     }
+  } else {
+    for (x = 0; x < allCards.length; x++) {
+      cardSection.append(allCards[x]);
+    }
   }
 })
