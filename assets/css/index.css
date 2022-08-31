@@ -105,6 +105,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.recipes_cards .recipe_card__main_infos__name {
+  width: 18rem;
+}
 .recipes_cards .recipe_card__main_infos__time {
   font-weight: bold;
 }
