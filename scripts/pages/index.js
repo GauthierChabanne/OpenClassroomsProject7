@@ -1,5 +1,10 @@
 import { recipes } from "../../database/recipes.js";
 
+//DOM elements
+const cardSection = document.querySelector(".recipes_cards");
+const searchbarInput = document.querySelector("#searchbar_input")
+
+
 function displayData(recipes) {
   const recipesCardsSection = document.querySelector(".recipes_cards");
   recipes.forEach((recipe) => {
@@ -11,6 +16,8 @@ function displayData(recipes) {
 
 function init() {
   displayData(recipes);
+  const allCards = document.querySelectorAll(".recipe_card");
+  nativeSearch(allCards, searchbarInput, cardSection)
 }
 
 init();
