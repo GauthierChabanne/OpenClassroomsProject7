@@ -1,0 +1,27 @@
+.searchbar {
+  background-color: #E7E7E7;
+  height: 3rem;
+  margin: 2rem 0;
+
+  & input {
+      width: 95%;
+      border: transparent;
+      background-color: #E7E7E7;
+      height: 100%;
+      padding-left: 2rem;
+      margin-right: 1rem;
+
+      &::placeholder {
+        color: #ADADAD;
+      }
+
+      &:focus {
+        outline: none;
+      }
+  }
+
+  & i {
+    font-size: 20px;
+    padding: 3px 3px 0;
+  }
+}

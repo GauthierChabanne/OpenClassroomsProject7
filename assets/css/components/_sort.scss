@@ -1,0 +1,55 @@
+.sort_bar {
+  display: flex;
+  align-items: center;
+
+  &__sort_button {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+
+    &__input_part {
+      & input {
+        width: 7rem;
+        border: transparent;
+        padding-left: 1rem;
+        color: white;
+
+        &::placeholder {
+          color: white;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & i {
+        color: white;
+      }
+    }
+  }
+}
+
+#ingredients_sort_button {
+ background-color: #3382F7;
+
+ & input {
+  background-color: #3382F7;
+ }
+}
+
+#appareils_sort_button {
+  background-color: #69D9A4;
+
+  & input {
+    background-color: #69D9A4;
+  }
+}
+
+#ustensiles_sort_button {
+background-color: #EE6554;
+
+  & input {
+    background-color: #EE6554;
+  }
+}

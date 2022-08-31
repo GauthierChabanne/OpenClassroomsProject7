@@ -1,0 +1,88 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.searchbar {
+  background-color: #E7E7E7;
+  height: 3rem;
+  margin: 2rem 0;
+}
+.searchbar input {
+  width: 95%;
+  border: transparent;
+  background-color: #E7E7E7;
+  height: 100%;
+  padding-left: 2rem;
+  margin-right: 1rem;
+}
+.searchbar input::-moz-placeholder {
+  color: #ADADAD;
+}
+.searchbar input:-ms-input-placeholder {
+  color: #ADADAD;
+}
+.searchbar input::placeholder {
+  color: #ADADAD;
+}
+.searchbar input:focus {
+  outline: none;
+}
+.searchbar i {
+  font-size: 20px;
+  padding: 3px 3px 0;
+}
+
+.sort_bar {
+  display: flex;
+  align-items: center;
+}
+.sort_bar__sort_button {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.sort_bar__sort_button__input_part input {
+  width: 7rem;
+  border: transparent;
+  padding-left: 1rem;
+  color: white;
+}
+.sort_bar__sort_button__input_part input::-moz-placeholder {
+  color: white;
+}
+.sort_bar__sort_button__input_part input:-ms-input-placeholder {
+  color: white;
+}
+.sort_bar__sort_button__input_part input::placeholder {
+  color: white;
+}
+.sort_bar__sort_button__input_part input:focus {
+  outline: none;
+}
+.sort_bar__sort_button__input_part i {
+  color: white;
+}
+
+#ingredients_sort_button {
+  background-color: #3382F7;
+}
+#ingredients_sort_button input {
+  background-color: #3382F7;
+}
+
+#appareils_sort_button {
+  background-color: #69D9A4;
+}
+#appareils_sort_button input {
+  background-color: #69D9A4;
+}
+
+#ustensiles_sort_button {
+  background-color: #EE6554;
+}
+#ustensiles_sort_button input {
+  background-color: #EE6554;
+}/*# sourceMappingURL=index.css.map */
