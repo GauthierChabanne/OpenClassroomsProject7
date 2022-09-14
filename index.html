@@ -44,32 +44,39 @@
         <div id="ingredients_sort_button" class="sort_bar__sort_button">
           <div class="sort_bar__sort_button__input_part">
             <input type="text" id="ingredients_input" placeholder="Ingrédients">
-            <label id="ingredients_input_arrow" for="ingredients_input"><i class="fa-solid fa-angle-down"></i></label>
           </div>
-          <div class="sort_bar__sort_button__content_part"></div>
+          <label id="ingredients_input_arrow" class="input_arrow" for="ingredients_input"><i class="fa-solid fa-angle-down"></i></label>
+          <div class="sort_bar__sort_button__content_part">
+            <ul class="sort_bar__sort_button__content_part__list"></ul>
+          </div>
         </div>
 
         <div id="appareils_sort_button" class="sort_bar__sort_button">
           <div class="sort_bar__sort_button__input_part">
             <input type="text" id="appareils_input" placeholder="Appareils">
-            <label id="appareils_input_arrow" for="appareils_input"><i class="fa-solid fa-angle-down"></i></label>
+            <label id="appareils_input_arrow" class="input_arrow" for="appareils_input"><i class="fa-solid fa-angle-down"></i></label>
           </div>
-          <div class="sort_bar__sort_button__content_part"></div>
+          <div class="sort_bar__sort_button__content_part">
+            <ul class="sort_bar__sort_button__content_part__list"></ul>
+          </div>
         </div>
 
         <div id="ustensiles_sort_button" class="sort_bar__sort_button">
           <div class="sort_bar__sort_button__input_part">
             <input type="text" id="ustensiles_input" placeholder="Ustensiles">
-            <label id="ustensiles_input_arrow" for="ustensiles_input"><i class="fa-solid fa-angle-down"></i></label>
+            <label id="ustensiles_input_arrow" class="input_arrow" for="ustensiles_input"><i class="fa-solid fa-angle-down"></i></label>
           </div>
-          <div class="sort_bar__sort_button__content_part"></div>
+          <div class="sort_bar__sort_button__content_part">
+            <ul class="sort_bar__sort_button__content_part__list"></ul>
+          </div>
         </div>
       </div>
     </nav>
 
     <section class="recipes_cards"></section>
 
-    <script src="scripts/outils/sort.js"></script>
+    <script src="scripts/outils/mainSearchSort.js"></script>
+    <script src="scripts/outils/tagSearchSort.js"></script>
     <script src="scripts/factories/recipes.js"></script>
     <script type="module" src="scripts/pages/index.js"></script>
   </div>
