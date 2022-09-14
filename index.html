@@ -2,26 +2,29 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Google Font-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-        rel="stylesheet">
+  <!-- Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet">
 
-      <!-- Font Awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-      <!-- Bootstrap -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 
-      <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
 
-      <title>Les petits plats</title>
+  <title>Les petits plats</title>
 </head>
 
 <body>
@@ -44,32 +47,42 @@
         <div id="ingredients_sort_button" class="sort_bar__sort_button">
           <div class="sort_bar__sort_button__input_part">
             <input type="text" id="ingredients_input" placeholder="Ingrédients">
-            <label id="ingredients_input_arrow" for="ingredients_input"><i class="fa-solid fa-angle-down"></i></label>
           </div>
-          <div class="sort_bar__sort_button__content_part"></div>
+          <label id="ingredients_input_arrow" class="input_arrow" for="ingredients_input"><i
+              class="fa-solid fa-angle-down"></i></label>
+          <div class="sort_bar__sort_button__content_part">
+            <ul class="sort_bar__sort_button__content_part__list"></ul>
+          </div>
         </div>
 
         <div id="appareils_sort_button" class="sort_bar__sort_button">
           <div class="sort_bar__sort_button__input_part">
             <input type="text" id="appareils_input" placeholder="Appareils">
-            <label id="appareils_input_arrow" for="appareils_input"><i class="fa-solid fa-angle-down"></i></label>
+            <label id="appareils_input_arrow" class="input_arrow" for="appareils_input"><i
+                class="fa-solid fa-angle-down"></i></label>
           </div>
-          <div class="sort_bar__sort_button__content_part"></div>
+          <div class="sort_bar__sort_button__content_part">
+            <ul class="sort_bar__sort_button__content_part__list"></ul>
+          </div>
         </div>
 
         <div id="ustensiles_sort_button" class="sort_bar__sort_button">
           <div class="sort_bar__sort_button__input_part">
             <input type="text" id="ustensiles_input" placeholder="Ustensiles">
-            <label id="ustensiles_input_arrow" for="ustensiles_input"><i class="fa-solid fa-angle-down"></i></label>
+            <label id="ustensiles_input_arrow" class="input_arrow" for="ustensiles_input"><i
+                class="fa-solid fa-angle-down"></i></label>
           </div>
-          <div class="sort_bar__sort_button__content_part"></div>
+          <div class="sort_bar__sort_button__content_part">
+            <ul class="sort_bar__sort_button__content_part__list"></ul>
+          </div>
         </div>
       </div>
     </nav>
 
     <section class="recipes_cards"></section>
 
-    <script src="scripts/outils/sort.js"></script>
+    <script src="scripts/outils/mainSearchSort.js"></script>
+    <script src="scripts/outils/tagSearchSort.js"></script>
     <script src="scripts/factories/recipes.js"></script>
     <script type="module" src="scripts/pages/index.js"></script>
   </div>
