@@ -59,10 +59,10 @@ function recipeFactory(data) {
     const recipeCardDescription = document.createElement('p');
     recipeCardDescription.setAttribute('class', 'recipe_card__sub_infos__description');
     recipeCardDescription.textContent = description;
-  recipeCardSubInfos.appendChild(recipeCardDescription);
+    recipeCardSubInfos.appendChild(recipeCardDescription);
 
-  recipeCard.appendChild(recipeCardSubInfos);
-  return (recipeCard);
+    recipeCard.appendChild(recipeCardSubInfos);
+    return (recipeCard);
   }
 
   return {getRecipeCardDOM};
