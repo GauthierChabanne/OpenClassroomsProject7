@@ -1,4 +1,4 @@
-import { eachSort } from "../outils/mainSearchSort.js"
+import { forSort } from "../outils/mainSearchSort.js"
 
 //DOM elements
 
@@ -115,13 +115,13 @@ function bigCheck(cards, filterMainInput, ingredientFilterList, appareilFilterLi
   } else {
     //Si il n'y a rien dans les filtres, filtre à partir de la barre de recherche sur l'entièrete des cartes
     if (ingredientFilterList.length === 0 && appareilFilterList.length === 0 && ustensileFilterList.length === 0) {
-      eachSort(cards, filterMainInput);
+      forSort(cards, filterMainInput);
     } else {
       //Si il y a des tags, filtre en fonction des tags
       checkTags(cards, ingredientFilterList, appareilFilterList, ustensileFilterList)
       const thirdFilterCards = checkTags(cards, ingredientFilterList, appareilFilterList, ustensileFilterList)
       //Quand on rentre une valeur dans la barre de recherche, filtre en fonction de ce qui est écrit à partir de ce qui est déjà filtré par les tags
-      eachSort(thirdFilterCards, filterMainInput);
+      forSort(thirdFilterCards, filterMainInput);
     }
   }
 }
