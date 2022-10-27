@@ -8,9 +8,9 @@ const searchbarInput = document.querySelector("#searchbar_input");
 function eachSort(cards, filter) {
   //Regarde si il y a bien plus de deux caractères dans l'input principal
   if (filter.length > 2) {
-    cards.forEach(card => card.style.display = "none");
     //Regarde chacune des cartes une par une
     cards.forEach((card) => {
+      card.style.display = "none"
       //Recupere le titre de la carte
       const cardTitle = card.querySelector(".recipe_card__main_infos__name");
       const cardTitleValue = cardTitle.innerText;
@@ -61,3 +61,29 @@ searchbarInput.addEventListener("keyup" , function () {
 })
 
 export {eachSort}
+
+
+function forSort(cards, filter) {
+  if (filter.length > 2) {
+
+    for (let i = 0; i < cards.length; i++) {
+      const cardTitleValue = cards[i].name;
+      const cardIngredients = cards[i].ingredients;
+      const cardIngredientsArray = [];
+
+      for (let z = 0; z < cardIngredients.length; z++) {
+        cardIngredientsArray.push(cardIngredients[z].ingredient);
+      }
+
+      const cardIngredientsList = cardIngredientsArray.join(",");
+
+      const cardDescriptionValue = cards[i].description;
+
+      const allCardContent = cardTitleValue + cardIngredientsList + cardDescriptionValue;
+
+      if (allCardContent.toLowerCase().indexOf(filter) > -1) {
+        console.log(cardTitleValue);
+      }
+    }
+  }
+}
