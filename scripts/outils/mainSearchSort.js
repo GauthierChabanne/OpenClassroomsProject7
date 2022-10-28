@@ -7,11 +7,9 @@ const searchbarInput = document.querySelector("#searchbar_input");
 //sort function
 function forSort(cards, filter) {
   if (filter.length > 2) {
-    for (let x = 0; x < cards.length; x++) {
-      cards[x].style.display = "none"
-    }
-
     for (let i = 0; i < cards.length; i++) {
+
+      cards[i].style.display = "none"
 
       const cardTitle = cards[i].querySelector(".recipe_card__main_infos__name");
       const cardTitleValue = cardTitle.innerText;
